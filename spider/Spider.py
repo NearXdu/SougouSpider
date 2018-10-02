@@ -14,6 +14,7 @@ from utils.RedisUtil import RedisUtil
 from utils.DataHolder import DataHolder
 from utils.MysqlUtil import *
 from models.SougouList import SougouList
+from models.SougouDetail import SougouDetail
 
 sys.path.append(PROJECT_PATH)
 
@@ -70,7 +71,34 @@ class Spider(object):
                     self.log.log('正在写入数据 {}-{}'.format(result['url'], result['filename']))
                 session.close()
 
+    def get_dowload_url(self):
+        NoUse.__no_use__()
+        session=build_session()
+        results=session.query(SougouList).all()
+        session.close()
+        session=build_session()
+        for row in results:
+            self.log.log("正在解析从列表页解析 {}".format(row.url))
+            html=get_html_text(row.url)
+            soup = BeautifulSoup(html, 'lxml')
+            downloadUrl='download.'+soup.find('div', id='dict_dl_btn').a['href'][2:]
+            fileName=row.filename
+            create_time=row.create_time
+            update_time=row.update_time
+            sougouDetail=SougouDetail(fileName,downloadUrl,create_time,update_time)
+            session.add(sougouDetail)
+            session.commit()
+            self.log.log("正在写入数据 {}-{}".format(downloadUrl,fileName))
+        session.close()
+
+    def run(self):
+        self.log.log("开始获取列表页")
+        self.get_sougou_list()
+        self.log.log("获取列表页完成，开始获取下载页")
+        self.get_dowload_url()
+        self.log.log("获取下载页完成，开始下载并解析")
+
 
 if __name__ == '__main__':
     sp = Spider()
-    sp.get_sougou_list()
+    sp.run()
