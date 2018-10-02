@@ -1,6 +1,6 @@
 # -*- encoding:utf-8 -*-
 import pymysql
-pymysql.install_as_MySQLdb()
+#pymysql.install_as_MySQLdb()
 from sqlalchemy import create_engine, Column, Integer
 from sqlalchemy.dialects.mysql import VARCHAR, DATETIME,DATE,FLOAT
 from sqlalchemy.engine.url import URL
