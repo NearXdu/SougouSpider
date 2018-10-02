@@ -30,3 +30,4 @@ SOUGOU_START_URLS=["https://pinyin.sogou.com/dict/cate/index/426",
 
 PROJECT_PATH=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PROJECT_LOG_PATH=os.path.join(PROJECT_PATH,'data/log')
+SOUGOU_SCELFILE_PATH=os.path.join(PROJECT_PATH,'data/scel')
