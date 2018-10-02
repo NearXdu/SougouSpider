@@ -14,3 +14,11 @@ def get_html_text(url):
         return r.text
     except:
         return -1
+
+def download_binary_file(url):
+    try:
+        r=requests.get('http://'+url,timeout=30,stream=True)
+        r.raise_for_status()
+        return r.content
+    except:
+        return -1
