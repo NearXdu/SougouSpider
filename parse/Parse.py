@@ -24,6 +24,61 @@ def __read_unit16(open_file):
         # struct.error: unpack requires a bytes object of length 2
 
 
+
+def process(file):
+    file_size = os.path.getsize(file)
+    with open(file, "rb") as f:
+        try:
+            hz_offset = 0
+            mask = struct.unpack('128B', f.read(128))[4]
+            if mask == 0x44:
+                hz_offset = 0x2628
+            elif mask == 0x45:
+                hz_offset = 0x26c4
+
+            title = __read_utf16_str(f, 0x130, 0x338 - 0x130)
+            type_ = __read_utf16_str(f, 0x338, 0x540 - 0x338)
+            desc = __read_utf16_str(f, 0x540, 0xd40 - 0x540)
+            samples = __read_utf16_str(f, 0xd40, 0x1540 - 0xd40)
+            # print("Title：%s" % title, "Type：%s" % type_, "Desc：%s" % desc, "Samples：%s" % samples, sep="\n")
+            py_map = {}
+            f.seek(0x1540 + 4)
+            while True:
+                py_code = __read_unit16(f)
+                py_len = __read_unit16(f)
+                py_str = __read_utf16_str(f, -1, py_len)
+
+                if py_code not in py_map:
+                    py_map[py_code] = py_str
+
+                if py_str == 'zuo':
+                    break
+
+            f.seek(hz_offset)
+            while f.tell() != file_size:
+                word_count = struct.unpack('<H', f.read(2))[0]
+                pinyin_count = int(struct.unpack('<H', f.read(2))[0] / 2)
+
+                py_set = []
+                for i in range(pinyin_count):
+                    py_id = __read_unit16(f)
+                    py_set.append(py_map[py_id])
+                py_str = "'".join(py_set)
+
+                for i in range(word_count):
+                    word_len = __read_unit16(f)
+                    word_str = __read_utf16_str(f, -1, word_len)
+                    f.read(12)
+                    yield word_str
+        except KeyError:
+            pass
+        except struct.error:
+            # 求大神指针错误
+            # mask = struct.unpack('128B', f.read(128))[4]
+            # struct.error: unpack requires a bytes object of length 128
+            pass
+
+
 def transform(source_file_or_dir):
     """
     用于将搜狗拼音词库转换为txt文件
