@@ -19,7 +19,7 @@ if __name__ == '__main__':
     data=DataHolder()
 
     if data.set(ru.get('zx')):
-        print data.get()
+        print (data.get())
     else:
         print('asdf')
-   
+

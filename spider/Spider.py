@@ -4,7 +4,7 @@ from datetime import datetime
 import sys
 from log.UtilLogger import UtilLogger
 
-reload(sys)
+
 sys.setdefaultencoding('utf8')
 from network.Network import *
 from bs4 import BeautifulSoup
