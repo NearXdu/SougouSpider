@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9dbf71ba-ca82-4c1d-93c3-a1e3402022f9" name="Default Changelist" comment="增量爬取列表页">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/scel/test.scel" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/scel/test1.scel" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parse/Parse.py" beforeDir="false" afterPath="$PROJECT_DIR$/parse/Parse.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spider/Downloader.py" beforeDir="false" afterPath="$PROJECT_DIR$/spider/Downloader.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spider/Spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/spider/Spider.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/RedisUtil.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/RedisUtil.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/Utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/Utils.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,10 +19,10 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/SougouSpider$UtilLogger.coverage" NAME="UtilLogger Coverage Results" MODIFIED="1538301172194" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/log" />
     <SUITE FILE_PATH="coverage/SougouSpider$pytest_in_UtilLogger_py.coverage" NAME="pytest in UtilLogger.py Coverage Results" MODIFIED="1538300613103" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/log" />
-    <SUITE FILE_PATH="coverage/SougouSpider$spider.coverage" NAME="spider Coverage Results" MODIFIED="1538450775989" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spider" />
-    <SUITE FILE_PATH="coverage/SougouSpider$main.coverage" NAME="main Coverage Results" MODIFIED="1538823399251" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SougouSpider$spider.coverage" NAME="spider Coverage Results" MODIFIED="1538881868863" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spider" />
+    <SUITE FILE_PATH="coverage/SougouSpider$main.coverage" NAME="main Coverage Results" MODIFIED="1538882677591" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/SougouSpider$Models.coverage" NAME="Models Coverage Results" MODIFIED="1538220937701" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
-    <SUITE FILE_PATH="coverage/SougouSpider$Downloader.coverage" NAME="Downloader Coverage Results" MODIFIED="1538471347136" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spider" />
+    <SUITE FILE_PATH="coverage/SougouSpider$Downloader.coverage" NAME="Downloader Coverage Results" MODIFIED="1538882292912" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spider" />
     <SUITE FILE_PATH="coverage/SougouSpider$RedisUtil.coverage" NAME="RedisUtil Coverage Results" MODIFIED="1538216596795" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
   </component>
   <component name="FUSProjectUsageTrigger">
@@ -36,7 +39,7 @@
         <counts>
           <entry key="log" value="1" />
           <entry key="md" value="7" />
-          <entry key="py" value="42" />
+          <entry key="py" value="43" />
           <entry key="sql" value="2" />
         </counts>
       </usages-collector>
@@ -44,7 +47,7 @@
         <counts>
           <entry key="Markdown" value="7" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="42" />
+          <entry key="Python" value="43" />
           <entry key="SQL" value="2" />
         </counts>
       </usages-collector>
@@ -52,7 +55,7 @@
         <counts>
           <entry key="dummy" value="19" />
           <entry key="md" value="151" />
-          <entry key="py" value="13269" />
+          <entry key="py" value="13516" />
           <entry key="sql" value="1410" />
           <entry key="txt" value="58" />
         </counts>
@@ -61,7 +64,7 @@
         <counts>
           <entry key="Markdown" value="151" />
           <entry key="PLAIN_TEXT" value="77" />
-          <entry key="Python" value="13269" />
+          <entry key="Python" value="13516" />
           <entry key="SQL" value="1410" />
         </counts>
       </usages-collector>
@@ -72,11 +75,23 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spider/Spider.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="106">
-              <caret line="61" column="36" selection-start-line="61" selection-start-column="25" selection-end-line="61" selection-end-column="36" />
+            <state relative-caret-position="379">
+              <caret line="104" selection-start-line="104" selection-end-line="104" />
               <folding>
                 <element signature="e#24#53#0" expanded="true" />
-                <marker date="1538816532435" expanded="false" signature="800:809" ph="..." />
+                <marker date="1538881198074" expanded="false" signature="828:837" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils/Utils.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+              <folding>
+                <marker date="1538881522358" expanded="true" signature="35:40" ph="..." />
               </folding>
             </state>
           </provider>
@@ -85,11 +100,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spider/Downloader.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+            <state relative-caret-position="220">
+              <caret line="36" column="9" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
               <folding>
                 <element signature="e#24#35#0" expanded="true" />
-                <marker date="1538455268459" expanded="true" signature="252:257" ph="..." />
+                <marker date="1538882291546" expanded="true" signature="282:287" ph="..." />
               </folding>
             </state>
           </provider>
@@ -98,13 +113,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="64" column="26" selection-start-line="64" selection-start-column="26" selection-end-line="64" selection-end-column="26" />
+            <state relative-caret-position="748">
+              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
               <folding>
                 <element signature="e#24#52#0" expanded="true" />
-                <marker date="1538823387703" expanded="true" signature="522:753" ph="..." />
-                <marker date="1538823387703" expanded="true" signature="1610:1612" ph="..." />
-                <marker date="1538823387703" expanded="true" signature="1611:1612" ph="..." />
+                <marker date="1538881540635" expanded="true" signature="522:753" ph="..." />
+                <marker date="1538881540635" expanded="true" signature="1594:1596" ph="..." />
+                <marker date="1538881540635" expanded="true" signature="1595:1596" ph="..." />
               </folding>
             </state>
           </provider>
@@ -113,7 +128,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/utils/RedisUtil.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
+            <state relative-caret-position="462">
               <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
               <folding>
                 <element signature="e#26#49#0" expanded="true" />
@@ -180,18 +195,6 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utils/MysqlUtil.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
-              <folding>
-                <element signature="e#25#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -213,9 +216,12 @@
       <find>redis</find>
       <find>ru</find>
       <find>session</find>
-      <find>create_time</find>
       <find>hash</find>
       <find>Thread</find>
+      <find>create_time</find>
+      <find>encode</find>
+      <find>tmpUrl</find>
+      <find>strf</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -255,15 +261,15 @@
         <option value="$PROJECT_DIR$/utils/NoUse.py" />
         <option value="$PROJECT_DIR$/log/UtilLogger.py" />
         <option value="$PROJECT_DIR$/models/SougouList.py" />
-        <option value="$PROJECT_DIR$/utils/Utils.py" />
         <option value="$PROJECT_DIR$/network/Network.py" />
         <option value="$PROJECT_DIR$/config/Settings.py" />
-        <option value="$PROJECT_DIR$/spider/Downloader.py" />
         <option value="$PROJECT_DIR$/utils/MysqlUtil.py" />
         <option value="$PROJECT_DIR$/parse/Parse.py" />
-        <option value="$PROJECT_DIR$/spider/Spider.py" />
         <option value="$PROJECT_DIR$/utils/RedisUtil.py" />
+        <option value="$PROJECT_DIR$/spider/Spider.py" />
+        <option value="$PROJECT_DIR$/utils/Utils.py" />
         <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/spider/Downloader.py" />
       </list>
     </option>
   </component>
@@ -306,12 +312,6 @@
               <item name="SougouSpider" type="b2602c69:ProjectViewProjectNode" />
               <item name="SougouSpider" type="462c0819:PsiDirectoryNode" />
               <item name="log" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SougouSpider" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SougouSpider" type="462c0819:PsiDirectoryNode" />
-              <item name="log" type="462c0819:PsiDirectoryNode" />
-              <item name=".pytest_cache" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SougouSpider" type="b2602c69:ProjectViewProjectNode" />
@@ -537,7 +537,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.2532189" />
@@ -706,16 +705,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils/Utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="43" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
-          <folding>
-            <marker date="1538379007244" expanded="true" signature="35:40" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/utils/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -752,14 +741,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/network/Network.py">
+    <entry file="file://$PROJECT_DIR$/utils/MysqlUtil.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+        <state relative-caret-position="114">
+          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
           <folding>
-            <marker date="1538454936482" expanded="true" signature="131:136" ph="..." />
-            <marker date="1538454936482" expanded="true" signature="343:348" ph="..." />
+            <element signature="e#25#39#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/RedisUtil.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+          <folding>
+            <element signature="e#26#49#0" expanded="true" />
+            <marker date="1538819440425" expanded="true" signature="102:107" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/SougouKeyword.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -775,65 +781,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spider/Downloader.py">
+    <entry file="file://$PROJECT_DIR$/network/Network.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+        <state relative-caret-position="220">
+          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
           <folding>
-            <element signature="e#24#35#0" expanded="true" />
-            <marker date="1538455268459" expanded="true" signature="252:257" ph="..." />
+            <marker date="1538454936482" expanded="true" signature="131:136" ph="..." />
+            <marker date="1538454936482" expanded="true" signature="343:348" ph="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/SougouKeyword.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spider/Spider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="61" column="36" selection-start-line="61" selection-start-column="25" selection-end-line="61" selection-end-column="36" />
+        <state relative-caret-position="379">
+          <caret line="104" selection-start-line="104" selection-end-line="104" />
           <folding>
             <element signature="e#24#53#0" expanded="true" />
-            <marker date="1538816532435" expanded="false" signature="800:809" ph="..." />
+            <marker date="1538881198074" expanded="false" signature="828:837" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils/RedisUtil.py">
+    <entry file="file://$PROJECT_DIR$/spider/Downloader.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+        <state relative-caret-position="220">
+          <caret line="36" column="9" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
           <folding>
-            <element signature="e#26#49#0" expanded="true" />
-            <marker date="1538819440425" expanded="true" signature="102:107" ph="..." />
+            <element signature="e#24#35#0" expanded="true" />
+            <marker date="1538882291546" expanded="true" signature="282:287" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils/MysqlUtil.py">
+    <entry file="file://$PROJECT_DIR$/utils/Utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+        <state relative-caret-position="88">
+          <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
           <folding>
-            <element signature="e#25#39#0" expanded="true" />
+            <marker date="1538881522358" expanded="true" signature="35:40" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="64" column="26" selection-start-line="64" selection-start-column="26" selection-end-line="64" selection-end-column="26" />
+        <state relative-caret-position="748">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
           <folding>
             <element signature="e#24#52#0" expanded="true" />
-            <marker date="1538823387703" expanded="true" signature="522:753" ph="..." />
-            <marker date="1538823387703" expanded="true" signature="1610:1612" ph="..." />
-            <marker date="1538823387703" expanded="true" signature="1611:1612" ph="..." />
+            <marker date="1538881540635" expanded="true" signature="522:753" ph="..." />
+            <marker date="1538881540635" expanded="true" signature="1594:1596" ph="..." />
+            <marker date="1538881540635" expanded="true" signature="1595:1596" ph="..." />
           </folding>
         </state>
       </provider>

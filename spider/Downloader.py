@@ -6,6 +6,7 @@ from config.Settings import *
 import requests
 from utils.MysqlUtil import *
 from network.Network import *
+from datetime import datetime
 from models.SougouDetail import SougouDetail
 
 class Downloader(object):
@@ -30,8 +31,10 @@ class Downloader(object):
 
     def run(self):
         session=build_session()
-        result=session.query(SougouDetail).all()
+        dt=datetime(2017,12,31).strftime('%Y-%m-%d %H:%M:%S')
+        result=session.query(SougouDetail).filter(SougouDetail.update_time>=dt).all()
         self.log.log(u'一共 {} 条数据等待下载'.format(len(result)))
+        #exit(-1)
         for row in result:
             filename = self.strip_wd(row.filename)
             self.log.log(u'正在下载 {}-{}'.format(row.url,filename))

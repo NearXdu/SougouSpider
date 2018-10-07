@@ -4,8 +4,8 @@ from datetime import datetime
 import sys
 from log.UtilLogger import UtilLogger
 
-
-sys.setdefaultencoding('utf8')
+# python3 doesn't need this
+#sys.setdefaultencoding('utf8')
 from network.Network import *
 from bs4 import BeautifulSoup
 from utils.Utils import Utils

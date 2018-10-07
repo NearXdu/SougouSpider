@@ -45,7 +45,7 @@ def run():
     for file in os.listdir(SOUGOU_SCELFILE_PATH):
         words = process(os.path.join(SOUGOU_SCELFILE_PATH, file))
         for word in words:
-            hash = Utils.hash(word.encode('utf-8'))
+            hash = Utils.hash(word)
             if ru.hget('SougouKeywordHash', dh.set(hash)):
                 continue
             ru.hset('SougouKeywordHash', dh.get(), 1)
